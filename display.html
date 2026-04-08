@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Bus Stop Display</title>
+<link rel="stylesheet" href="/static/style.css">
+<meta http-equiv="refresh" content="5">
+
+</head>
+
+<body>
+
+<header>SMART BUS STOP DISPLAY BOARD</header>
+
+<table>
+
+<tr>
+<th>Bus Number</th>
+<th>Route</th>
+<th>Arrival Time</th>
+<th>Crowd Density</th>
+</tr>
+
+{% for bus in buses %}
+
+<tr>
+
+<td>{{bus.bus_no}}</td>
+<td>{{bus.route}}</td>
+<td>{{bus.arrival}}</td>
+
+<td class="{{bus.crowd|lower}}">
+{{bus.crowd}}
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>play

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Bus Tracking</title>
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<header>Live Bus Tracking</header>
+
+<div id="map" style="height:500px;width:80%;margin:auto;"></div>
+
+<script>
+
+var map;
+var marker;
+
+function initMap(){
+
+var busLocation = {lat:17.3850 , lng:78.4867};
+
+map = new google.maps.Map(
+document.getElementById("map"),
+{zoom:13,center:busLocation}
+);
+
+marker = new google.maps.Marker({
+position:busLocation,
+map:map,
+title:"Bus Location"
+});
+
+moveBus();
+
+}
+
+function moveBus(){
+
+var lat = 17.3850;
+var lng = 78.4867;
+
+setInterval(function(){
+
+lat = lat + 0.001;
+lng = lng + 0.001;
+
+var newPosition = {lat:lat , lng:lng};
+
+marker.setPosition(newPosition);
+
+map.panTo(newPosition);
+
+},3000);
+
+}
+
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbmQwyIKg-M7QMTXA8NtWqL-HXg1_G9sw&callback=initMap">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Crowd Density</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Bus Crowd Density</h2>
+
+<canvas id="crowdChart" width="400" height="200"></canvas>
+
+<script>
+
+var ctx = document.getElementById('crowdChart');
+
+new Chart(ctx,{
+
+type:'bar',
+
+data:{
+labels:['Bus101','Bus205','Bus330'],
+
+datasets:[{
+label:'Passengers',
+data:[15,32,45]
+}]
+}
+
+});
+
+</script>
+
+</body>
+</html>

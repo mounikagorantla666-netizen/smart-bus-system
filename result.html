@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Bus Details</title>
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<header>
+Bus Information
+</header>
+
+<div class="card">
+
+{% if bus %}
+
+<table>
+
+<tr>
+<th>Bus Number</th>
+<td>{{bus_no}}</td>
+</tr>
+
+<tr>
+<th>Route</th>
+<td>{{bus.route}}</td>
+</tr>
+
+<tr>
+<th>Arrival Time</th>
+<td>{{bus.arrival}}</td>
+</tr>
+
+<tr>
+<th>Available Seats</th>
+<td>{{bus.seats}}</td>
+</tr>
+
+<tr>
+<th>Crowd Density</th>
+<td class="{{bus.crowd|lower}}">{{bus.crowd}}</td>
+</tr>
+
+<tr>
+<th>Status</th>
+<td>{{bus.status}}</td>
+</tr>
+
+</table>
+
+{% else %}
+
+<h3>Bus Not Found</h3>
+
+{% endif %}
+
+</div>
+
+<footer>
+Smart Bus Monitoring System
+</footer>
+
+</body>
+</html>

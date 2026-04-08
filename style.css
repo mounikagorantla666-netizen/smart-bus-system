@@ -1,0 +1,187 @@
+/* Page Styling */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right,#4facfe,#00f2fe);
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+/* Header */
+header{
+    background:#1b3c73;
+    color:white;
+    padding:20px;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* Search Box */
+.search-box{
+    margin-top:40px;
+}
+
+input{
+    padding:12px;
+    width:250px;
+    border-radius:5px;
+    border:none;
+    font-size:16px;
+}
+
+button{
+    padding:12px 18px;
+    background:#1b3c73;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0f2a52;
+}
+
+/* Bus Details Card */
+.card{
+    background:white;
+    width:450px;
+    margin:40px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+th{
+    background:#1b3c73;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+/* Crowd Density Colors */
+.low{
+    color:green;
+    font-weight:bold;
+}
+
+.medium{
+    color:orange;
+    font-weight:bold;
+}
+
+.high{
+    color:red;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    margin-top:60px;
+    padding:15px;
+    background:#1b3c73;
+    color:white;
+}
+/* Navigation bar */
+
+.navbar{
+background:#1b3c73;
+overflow:hidden;
+text-align:center;
+}
+
+.navbar a{
+display:inline-black;
+color:white;
+padding:14px 20px;
+text-decoration:none;
+font-size:16px;
+}
+
+.navbar a:hover{
+background:#0f2a52;
+border-radius:5px;
+}
+.card{
+width:450px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 15px;
+background:#1b3c73;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0f2a52;
+}
+
+table{
+width:70%;
+margin:40px auto;
+border-collapse:collapse;
+background:white;
+}
+
+th,td{
+padding:12px;
+border:1px solid #ccc;
+text-align:center;
+}
+
+th{
+background:#1b3c73;
+color:white;
+}
+
+.low{
+color:green;
+font-weight:bold;
+}
+
+.medium{
+color:orange;
+font-weight:bold;
+}
+
+.high{
+color:red;
+font-weight:bold;
+}
+
+select{
+width:95%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
