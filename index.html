@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Smart Bus Stop System</title>
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<header>SMART BUS STOP INFORMATION SYSTEM</header>
+
+<div class="navbar">
+
+<a href="/">🏠 Home</a>
+
+<a href="/map">🚌 Track Bus</a>
+
+<a href="/graph">📊 Crowd Graph</a>
+
+<a href="/admin">⚙ Admin</a>
+
+<a href="/prediction">⏱ Arrival Prediction</a>
+
+<a href="/display">📺 Bus Stop Display</a>
+
+</div>
+
+<div class="card">
+
+<h2>Select Bus Stop</h2>
+
+<form action="/stop" method="post">
+
+<select name="stop">
+
+<option value="City Center">City Center</option>
+
+<option value="Railway Station">Railway Station</option>
+
+<option value="Bus Depot">Bus Depot</option>
+
+<option value="University">University</option>
+
+<option value="Hospital">Hospital</option>
+
+
+</select>
+
+<button type="submit">Show Buses</button>
+
+</form>
+
+
+<h2>Search Bus Details</h2>
+
+<form action="/search" method="post">
+<input type="text" name="bus_no" placeholder="Enter Bus Number">
+<button type="submit">Search</button>
+</form>
+
+<h2>Arrival Prediction</h2>
+
+<form action="/predict" method="post">
+
+<input type="number" name="distance" placeholder="Distance (km)">
+
+<input type="number" name="traffic" placeholder="Traffic Level (1-3)">
+
+<input type="number" name="speed" placeholder="Bus Speed">
+
+<button type="submit">Predict Arrival</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
